@@ -71,7 +71,7 @@ You can also modify the visuals directly inside `CreateGui` if you want differen
 
 ## License
 
-Use it however you want. Modify it. Ship it. Break it. Fix it.
+Use it however you want.
 No credit required, but always appreciated.
 This repository is licensed under MIT license.
 

@@ -1,10 +1,10 @@
-# Tooltip Module for Roblox
+# tooltip-system
 
 A simple tooltip system for Roblox UI that actually feels nice to use.
 
-This module shows a tooltip when the player hovers their mouse over a UI element for a short moment. It follows the cursor, fades in and out smoothly, and stays inside the screen without clipping.
+This module shows a tooltip when the player hovers their mouse over a UI element for a short moment. It follows the cursor, fades in and out smoothly, and stays inside the screen-
 
-Built for desktop players only. Touch devices are automatically ignored.
+**PLEASE NOTE:** This was built for desktop players only. Touch devices are automatically ignored.
 
 ## Features
 
@@ -18,7 +18,7 @@ Built for desktop players only. Touch devices are automatically ignored.
 ## Setup
 
 1. Create a ModuleScript called `TooltipModule`
-2. Paste the Tooltip code into it
+2. Paste the Tooltip code into it (code is in src)
 3. Put the ModuleScript inside `ReplicatedStorage`
 
 That is it. The module handles its own ScreenGui and cleanup.
@@ -54,14 +54,14 @@ When the player hovers the button without moving the mouse for a moment, the too
 
 ## Customization
 
-You can tweak these values after creating the tooltip:
+You can always change these values after creating the tooltip:
 
 ```lua
 tip.HoverTime = 1.3
 tip.Offset = Vector2.new(8, 4)
 ```
 
-You can also modify the visuals directly inside `CreateGui` if you want different colors, fonts, or padding.
+And you can also modify the visuals directly inside `CreateGui` if you want different colors, fonts, or padding.
 
 ## Notes
 
@@ -73,6 +73,6 @@ You can also modify the visuals directly inside `CreateGui` if you want differen
 
 Use it however you want.
 No credit required, but always appreciated.
-This repository is licensed under MIT license.
+This repository is licensed under MIT license. See LICENSE for more details.
 
 Have fun building cool UI.

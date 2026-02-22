@@ -23,11 +23,11 @@ This module shows a tooltip when the player hovers their mouse over a UI element
 
 That is it. The module handles its own ScreenGui and cleanup.
 
-## Basic Usage
+## Usage
 
-Put this **LocalScript** inside any UI object like a TextButton or ImageButton.
+Put this **LocalScript** inside any UI object like a TextButton or ImageButton. (Make sure the UI Object Interactable property is set to true or else it won't work)
 
-```lua
+```luau
 local Tooltip = require(game.ReplicatedStorage:WaitForChild("TooltipModule"))
 
 local button = script.Parent
@@ -56,16 +56,16 @@ When the player hovers the button without moving the mouse for a moment, the too
 
 You can always change these values after creating the tooltip:
 
-```lua
+```
 tip.HoverTime = 1.3
 tip.Offset = Vector2.new(8, 4)
 ```
 
-And you can also modify the visuals directly inside `CreateGui` if you want different colors, fonts, or padding.
+And you can also modify the visuals directly inside `CreateGui` if you want different colors, fonts, or padding...
 
-## Notes
+## Important Notes
 
-* This only works for mouse and keyboard users
+* This **ONLY** works for mouse and keyboard users
 * Mobile and console players will not see tooltips
 * Designed to be simple, readable, and easy to extend
 
